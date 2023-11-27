@@ -11,7 +11,7 @@ const SendMoneySchema = Yup.object().shape({
   recipientId: Yup.string()
     .min(10, "Mobile number should have 10 digits")
     .max(10, "Mobile number should have 10 digits")
-    .matches(/^[0-9]*$/, "Invalid")
+    .matches(/^[0-9]*$/, "Invalid mobile number provided.")
     .required("Who are we sending money to? Please enter."),
   amount: Yup.number()
     .min(10, "Minimum allowed amount is Ksh. 10")
