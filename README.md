@@ -22,7 +22,7 @@ Next.js 14 with AppRouter (React Server Components Out of the Box)
 # plus
 Linting
 
-# pus 
+# plus 
 Formik (Form without the tears) & Yup (Form Validation on steroids)
 
 # plus
@@ -48,6 +48,13 @@ yarn (I recommend)
 Then, run the development server:
 
 ```bash
+# First,
+create a .env file 
+
+# then
+copy the contents of the .env.example to the .env file
+
+# Finally
 npm run dev
 # or
 yarn dev (I recommend)
@@ -63,10 +70,14 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js & other technologies used in this application, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- - [MUI v5](https://mui.com) - The complete component library.
+- [Formik Form](https://formik.org/docs/overview) - Forms without the tears.
+- [Yup](https://www.npmjs.com/package/yup#getting-started) - Schema builder for runtime value parsing and validation.
+- [Yup](https://www.npmjs.com/package/yup#getting-started) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 

@@ -8,7 +8,7 @@ const SuspenseLoader = () => {
   return (
     <Box
       sx={{
-        height: "100vh",
+        height: "50vh",
         width: "100%",
         display: "flex",
         justifyContent: "center",

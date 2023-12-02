@@ -12,15 +12,23 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import { Money, Phone, VerifiedUser, Watch } from "@mui/icons-material";
 import { grey } from "@mui/material/colors";
 
-const TransactionCard = () => {
+const TransactionCard = ({
+  transaction,
+  key,
+}: {
+  transaction: any;
+  key: number;
+}) => {
   const theme = useTheme();
 
   return (
     <Card
+      key={key}
       elevation={0}
       sx={{
         backgroundColor: theme.palette.background.default,
         borderRadius: 2,
+        marginBottom: theme.spacing(2),
       }}
     >
       <CardContent>
@@ -52,7 +60,7 @@ const TransactionCard = () => {
                   <Typography
                     sx={{ marginLeft: theme.spacing(1), color: grey[600] }}
                   >
-                    john.doe@example.com
+                    {transaction?.recipientEmail}
                   </Typography>
                 </Stack>
               </Grid>
@@ -69,7 +77,7 @@ const TransactionCard = () => {
                   <Typography
                     sx={{ marginLeft: theme.spacing(1), color: grey[600] }}
                   >
-                    +254722000000
+                    {transaction?.recipientPhoneNumber}
                   </Typography>
                 </Stack>
               </Grid>
@@ -86,7 +94,7 @@ const TransactionCard = () => {
                   <Typography
                     sx={{ marginLeft: theme.spacing(1), color: grey[600] }}
                   >
-                    2023-10-31T08:40:51.620Z
+                    {transaction?.timestamp}
                   </Typography>
                 </Stack>
               </Grid>
@@ -103,7 +111,7 @@ const TransactionCard = () => {
                   <Typography
                     sx={{ marginLeft: theme.spacing(1), color: grey[600] }}
                   >
-                    Ksh. 2500
+                    {transaction?.amount}
                   </Typography>
                 </Stack>
               </Grid>
